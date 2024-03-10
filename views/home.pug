@@ -1,0 +1,37 @@
+extends base.pug
+
+block scripts 
+  script(src="../static/j1.js")
+block style 
+    style 
+      include ../static/style.css 
+
+block content 
+    
+
+   section#img 
+      div.up
+        |Welcome to my Dance Academy
+      div.small 
+        |Eat Sleep Dance Repeat.
+   section#mission 
+      h2
+        |Our Mission
+      div.card 
+        h3 Dance with perfection
+        p Only in fews days after joing our academy you will be able to dance perfectly like a professional.
+       
+      div.card 
+        h3 Dance the way you like
+        p You dont need to copy anyone. You will be able to create your own moves and that is how you will get successful.
+      div.card 
+        h3 Become an expert dancer
+        p We promise that you will be able to become an expert dancer just in few weeks after joing our academy.
+   section#spons
+        h2 Our Sponsors
+        div.spons 
+          img(src="/static/logo1.png" alt="sponsor image")
+          img(src="/static/logo2.png" alt="sponsor image")
+          img(src="/static/logo3.png" alt="sponsor image")
+
+

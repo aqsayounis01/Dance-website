@@ -1,0 +1,151 @@
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Press+Start+2P&family=Roboto+Condensed:wght@700&family=Roboto+Mono:wght@100&family=Rubik+Microbe&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    nav {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    ul {
+        display: flex;
+        align-items: center;
+    }
+    
+    li {
+        flex-direction: column;
+        margin: 14px 29px;
+        padding: 10px 10px;
+        font-size: 19px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:hover {
+        color: rgba(189, 184, 184, 0.789);
+    }
+    
+    #img {
+        height: 500px;
+        background-image: url('static/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 40px;
+    }
+    
+    #logo {
+        width: 220px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 25px;
+    }
+    
+    #logo>img {
+        filter: invert(1);
+    }
+    
+    #logo>p {
+        padding: 0px 10px;
+        font-size: 20px;
+        color: white;
+    }
+    
+    div.up {
+        font-weight: bold;
+    }
+    
+    div.small {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    #mission {
+        height: 400px;
+        padding: 30px 100px;
+        background-color: black;
+    }
+    
+    #mission h2 {
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Roboto Mono', monospace;
+        padding-top: 12px;
+        color: white
+    }
+    
+    .card {
+        border: 2px solid black;
+        border-radius: 25px;
+        width: 400px;
+        height: 200px;
+        margin: 35px 18px;
+        padding: 18px 70px;
+        display: inline-block;
+        background-image: url("/static/img2.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100px;
+        filter: invert(1);
+        font-family: 'Barlow', sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    
+    .card>h3 {
+        text-align: center;
+        margin: 10px 0px;
+    }
+    
+    .card>p {
+        text-align: center;
+    }
+    
+    #spons {
+        height: 400px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    #spons h2 {
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        padding: 33px;
+        font-size: 30px;
+    }
+    
+    div.spons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.spons>img {
+        padding: 0px 30px;
+        filter: invert(1);
+    }
+    
+    footer {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

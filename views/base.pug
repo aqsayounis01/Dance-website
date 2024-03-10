@@ -1,0 +1,28 @@
+//- template inheritance - we use this feature if we want some of the content to be same in our pages eg navbar and footer USING THE BLOCK AND EXTENDS KEYWORD
+//- like here done in home and contact.pug page using the base.pug
+//- where ever we have the block keyword in the base file, it will be replaced by the content of indivisual files.(in the individual files we only have to write the content that is to be replaced(using the block keyword))
+//-  And the content that we want same everywhere, should be directly written in the base file 
+doctype html 
+html 
+    head 
+        title Dance academy
+        block scripts 
+        block style 
+    body
+      nav.navbar#nv 
+       ul(style="list-style-type:none") 
+        div#logo 
+          img(src="../static/images.png " width="50px" height="50px")
+          p Dance Academy
+        //- if you want to use nested tag in a asame line then eg li #[a(href="/") Home]
+        li 
+            a(href="/") Home
+        li 
+            a(href="/" ) Services
+        li 
+            a(href="/" ) About us
+        li 
+            a(href="/contact" ) Contact us
+      block content 
+      footer 
+          |  Copyright &copy; 2022 Dance Academy | All rights reserved

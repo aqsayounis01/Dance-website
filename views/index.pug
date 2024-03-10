@@ -1,0 +1,60 @@
+//- this is how we write html in a pug file 
+//- the tag which is inside another tag should be in next line and after 2 spaces or tab
+//- if we want to write inside a tag, go in next line and give a tab and then write | and then write whatever you want to write 
+//-  a tab - 4 spaces
+//- THERE IS AN OPTION OF IMPORT IN GOOGLE FONTS, SO WE IMPORT IT WHEN USING PUG AND PASTE IT IN OUR CSS FILE AND GIVE THE FONT FAMILY TO THE SELECTOR YOU WANT TO GIVE THAT FONT TO
+doctype html
+html 
+  head 
+    title Dance academy 
+    style 
+      include ../static/style.css
+    
+
+  body 
+    nav.navbar#nv 
+       ul(style="list-style-type:none") 
+        div#logo 
+          img(src="../static/images.png " width="50px" height="50px")
+          p Dance Academy
+        //- if you want to use nested tag in a asame line then eg li #[a(href="/") Home]
+        li 
+            a(href="/") Home
+        li 
+            a(href="/" ) Services
+        li 
+            a(href="/" ) About us
+        li 
+            a(href="/" ) Contact us 
+
+    section#img 
+      div.up
+        |Welcome to my Dance Academy
+      div.small 
+        |Eat Sleep Dance Repeat.
+    section#mission 
+      h2
+        |Our Mission
+      div.card 
+        h3 Dance with perfection
+        p Only in fews days after joing our academy you will be able to dance perfectly like a professional.
+       
+      div.card 
+        h3 Dance the way you like
+        p You dont need to copy anyone. You will be able to create your own moves and that is how you will get successful.
+      div.card 
+        h3 Become an expert dancer
+        p We promise that you will be able to become an expert dancer just in few weeks after joing our academy.
+    section#spons
+        h2 Our Sponsors
+        div.spons 
+          img(src="/static/logo1.png" alt="sponsor image")
+          img(src="/static/logo2.png" alt="sponsor image")
+          img(src="/static/logo3.png" alt="sponsor image")
+
+    footer 
+        |  Copyright &copy; 2022 Dance Academy
+    script 
+      include ../static/j1.js
+    
+

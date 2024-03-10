@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+}
+
+label {
+    font-size: 20px;
+}
+
+input#myinp {
+    padding: 4px 15px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 13px;
+}
+
+div.form {
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 67vh;
+}
+
+div.form>input,
+textarea {
+    padding: 3px 140px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid;
+    outline: none;
+}
+
+div.form>input,
+textarea {
+    margin: auto;
+}
